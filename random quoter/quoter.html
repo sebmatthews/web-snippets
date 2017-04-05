@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <p id="insert"></p>
+    <script language=JavaScript>
+        var quoteSource = [{
+            quote: "The cloud is for everyone."
+        }, {
+            quote: "The cloud is democracy for all types of business."
+        }, {
+            quote: "Reduce your server deployment time from weeks to minutes."
+        }, {
+            quote: "The cloud is not a place, it's a future."
+        }, {
+            quote: "Why invest in tin & code when you can invest in services?"
+        }, {
+            quote: "Don't be daunted by the cloud. Embrace the change."
+        }, {
+            quote: "Cloud levels the playing field. Your business is competitor ready."
+        }];
+        var arraycount = quoteSource.length;
+        var random = Math.floor(Math.random() * arraycount);
+        var quote = "&quot;" + quoteSource[random].quote + "&quot;";
+        document.getElementById("insert").innerHTML = quote;
+    </script>
+</body>
+
+</html>
